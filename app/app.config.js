@@ -6,15 +6,9 @@ angular.
     function config($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix('!');
       $routeProvider.
-        when('/phones', {
-          template: '<phone-list></phone-list>'
-        }).
-        when('/phones/:phoneId', {
-          template: '<phone-detail></phone-detail>'
-        }).
         when('/zygarde', {
           template: '<zygarde-counter></zygarde-counter>'
         }).
-        otherwise('/phones');
+        otherwise('/zygarde');
     }
   ]);

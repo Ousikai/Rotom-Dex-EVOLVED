@@ -12,6 +12,9 @@ angular.
         when('/phones/:phoneId', {
           template: '<phone-detail></phone-detail>'
         }).
+        when('/zygarde', {
+          template: '<zygarde-counter></zygarde-counter>'
+        }).
         otherwise('/phones');
     }
   ]);

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid h3">
   <!-- The Modal -->
   <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
     <!-- The Close Button -->
@@ -8,36 +8,38 @@
     <!-- Modal Caption (Image Text) -->
     <div id="caption"></div>
   </div>
-  <div class="table-responsive">
-    <p>
-      Sort by:
-      <select ng-model="$ctrl.orderProp">
-        <option value="island">Island</option>
-        <option value="location">Location</option>
-      </select>
-    </p>
-    <table class="table table-bordered">
-      <thead class="thead-inverse">
-        <tr>
-          <th>Image</th>
-          <th><b>Name<b></th>
-          <th><b>Location<b></th>
-          <th><b>Notes<b></th>
-          <th><b>Completed<b></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="cell in $ctrl.cells | filter:$ctrl.query | orderBy:$ctrl.orderProp">
-          <td><img ng-src="{{cell.file}}" alt="{{cell.island}}"
-                height="200"
-                width="200"
-                ng-click="$ctrl.openModalImage(cell.file, cell.island)"/> </td>
-          <td>{{cell.island}}</td>
-          <td>{{cell.location}}</td>
-          <td>{{cell.notes}}</td>
-          <td>Mark as completed?</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <center>
+    <div class="table-responsive">
+      <p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp">
+          <option value="island">Island</option>
+          <option value="location">Location</option>
+        </select>
+      </p>
+      <table class="table table-bordered table-fit">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Image</th>
+            <th><b>Name<b></th>
+            <th><b>Location<b></th>
+            <th><b>Notes<b></th>
+            <th><b>Collected?<b></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="cell in $ctrl.cells | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+            <td><img ng-src="{{cell.file}}" alt="{{cell.island}}"
+                  height="200"
+                  width="200"
+                  ng-click="$ctrl.openModalImage(cell.file, cell.island)"/> </td>
+            <td>{{cell.island}}</td>
+            <td>{{cell.location}}</td>
+            <td>{{cell.notes}}</td>
+            <td>Mark as completed?</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </center>
 </div>

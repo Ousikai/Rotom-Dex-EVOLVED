@@ -1,4 +1,13 @@
 <div class="container-fluid">
+  <!-- The Modal -->
+  <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+    <!-- The Close Button -->
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img id="modalImg" class="modal-content" >
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
   <div class="table-responsive">
     <p>
       Sort by:
@@ -19,7 +28,10 @@
       </thead>
       <tbody>
         <tr ng-repeat="cell in $ctrl.cells | filter:$ctrl.query | orderBy:$ctrl.orderProp">
-          <td><img ng-src="{{cell.file}}" alt="{{cell.island}}" height="200" width="200" /></td>
+          <td><img ng-src="{{cell.file}}" alt="{{cell.island}}"
+                height="200"
+                width="200"
+                ng-click="$ctrl.openModalImage(cell.file, cell.island)"/> </td>
           <td>{{cell.island}}</td>
           <td>{{cell.location}}</td>
           <td>{{cell.notes}}</td>

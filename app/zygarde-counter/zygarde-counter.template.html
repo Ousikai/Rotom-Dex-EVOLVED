@@ -1,4 +1,4 @@
-<div class="container-fluid h3">
+<div class="container-fluid mobile-font">
   <!-- The Modal -->
   <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
     <!-- The Close Button -->
@@ -13,15 +13,15 @@
       <p>
         Sort by:
         <select ng-model="$ctrl.orderProp">
-          <option value="island">Island</option>
+          <option value="'id'*1">Island</option>
           <option value="location">Location</option>
         </select>
       </p>
-      <table class="table table-bordered table-fit">
+      <table class="table table-bordered">
         <thead class="thead-inverse">
           <tr>
             <th>Image</th>
-            <th><b>Name<b></th>
+            <th><b>Island<b></th>
             <th><b>Location<b></th>
             <th><b>Notes<b></th>
             <th><b>Collected?<b></th>

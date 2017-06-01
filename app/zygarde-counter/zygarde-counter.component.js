@@ -7,7 +7,7 @@ angular.
     templateUrl: 'zygarde-counter/zygarde-counter.template.html',
     controller: ['$http', function ($http) {
       var self = this;
-      self.orderProp = 'island';
+      self.orderProp = "'id'*1";
       $http.get('zygarde-counter/zygarde-cells.json').then(function(response) {
         self.cells = response.data;
       });

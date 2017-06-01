@@ -33,11 +33,14 @@
             <td><img ng-src="{{cell.file}}" alt="{{cell.island}}"
                   height="200"
                   width="200"
-                  ng-click="$ctrl.openModalImage(cell.file, cell.island)"/> </td>
+                  ng-click="$ctrl.openModalImage(cell.file, cell.island)"/>
+            </td>
             <td>{{cell.island}}</td>
             <td>{{cell.location}}</td>
             <td>{{cell.notes}}</td>
-            <td>Mark as completed?</td>
+            <td>
+              <i class="fa fa-check-square fa-5x" aria-hidden="true" > </i>
+            </td>
           </tr>
         </tbody>
       </table>

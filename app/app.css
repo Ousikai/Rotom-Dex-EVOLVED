@@ -1,3 +1,28 @@
+/* ---- Custom CSS ---- */
+/* Have table columns fit the width of their content */
+.table-fit{
+    width: 1px;
+}
+
+/* Font size for mobile devices accessing WebApp */
+.mobile-font{
+    font-size: 40px;
+}
+
+/* Change size of glyphicons */
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+
+/* Hover checkbox */
+.fa-check-square{
+  color: limegreen;
+}
+.fa-check-square:hover {
+  color: darkgreen;
+}
+/* ---- CSS I stole from the Internet ---- */
 /* Style the Image Used to Trigger the Image Modal */
 #myImg {
     border-radius: 5px;
@@ -108,15 +133,4 @@
     -moz-transition: opacity 500ms ease-in;
     -o-transition: opacity 500ms ease-in;
     -ms-transition: opacity 500ms ease-in;
-}
-
-/*-- Custom CSS --*/
-/* Have table columns fit the width of their content */
-.table-fit{
-    width: 1px;
-}
-
-/* Font size for mobile devices accessing WebApp */
-.mobile-font{
-    font-size: 40px;
 }

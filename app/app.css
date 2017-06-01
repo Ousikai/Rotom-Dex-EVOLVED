@@ -1,4 +1,4 @@
-/* Style the Image Used to Trigger the Modal */
+/* Style the Image Used to Trigger the Image Modal */
 #myImg {
     border-radius: 5px;
     cursor: pointer;
@@ -85,10 +85,38 @@
     }
 }
 
+/* Back to top button */
+.scrollup {
+    background: rgba(0, 0, 0, 0) url("http://www.bba-reman.com/images/icon_top.png") no-repeat scroll 0 0;
+    bottom: 50px;
+    height: 65px;
+    position: fixed;
+    right: 15px;
+    text-indent: -9999px;
+    width: 65px;
+    opacity: 0;
+    -webkit-transition: opacity 500ms ease-in;
+    -moz-transition: opacity 500ms ease-in;
+    -o-transition: opacity 500ms ease-in;
+    -ms-transition: opacity 500ms ease-in;
+    transition: opacity 500ms ease-in;
+}
+
+.visible {
+    opacity: 1;
+    -webkit-transition: opacity 500ms ease-in;
+    -moz-transition: opacity 500ms ease-in;
+    -o-transition: opacity 500ms ease-in;
+    -ms-transition: opacity 500ms ease-in;
+}
+
+/*-- Custom CSS --*/
+/* Have table columns fit the width of their content */
 .table-fit{
     width: 1px;
 }
 
+/* Font size for mobile devices accessing WebApp */
 .mobile-font{
     font-size: 40px;
 }

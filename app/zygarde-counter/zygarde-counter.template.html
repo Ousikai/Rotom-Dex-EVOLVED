@@ -10,15 +10,22 @@
   </div>
   <!-- Zygarde Cell Table -->
   <center>
+    <!-- Show Progress on Collection -->
+    Cells Collected
+    <button class="btn btn-danger btn-lg" ng-click="$ctrl.showCollected()">Show/Hide</button>
+    <div id="collectedCells">
+    </div>
+    </br>
     <div class="table-responsive">
       <p>
         Sort by:
         <select ng-model="$ctrl.orderProp">
           <option value="'id'*1">Island</option>
           <option value="location">Location</option>
+          <option value="'notes'">Notes</option>
         </select>
       </p>
-      <table class="table table-bordered">
+      <table class="table table-borderless">
         <thead class="thead-inverse">
           <tr>
             <th>Image</th>
@@ -39,7 +46,9 @@
             <td>{{cell.location}}</td>
             <td>{{cell.notes}}</td>
             <td>
-              <i class="fa fa-check-square fa-5x" aria-hidden="true" > </i>
+              <i class="fa fa-check-square fa-5x"
+              aria-hidden="true"
+              ng-click="$ctrl.collectCell(cell.id)"/>
             </td>
           </tr>
         </tbody>

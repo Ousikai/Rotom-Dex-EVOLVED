@@ -1,7 +1,7 @@
 /* ---- Custom CSS ---- */
 /* Have table columns fit the width of their content */
 .table-fit{
-    width: 1px;
+    width: 400px;
 }
 
 /* Font size for mobile devices accessing WebApp */
@@ -22,6 +22,15 @@
 .fa-check-square:hover {
   color: darkgreen;
 }
+
+/* Hover undo button */
+.glyphicon-remove-sign{
+  color: red;
+}
+.glyphicon-remove-sign:hover {
+  color: darkred;
+}
+
 /* ---- CSS I stole from the Internet ---- */
 /* Style the Image Used to Trigger the Image Modal */
 #myImg {

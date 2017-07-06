@@ -8,51 +8,33 @@
     <!-- Modal Caption (Image Text) -->
     <div id="caption"></div>
   </div>
-  <!-- Zygarde Cell Table -->
+      Cells Collected:
+  <div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+    aria-valuenow="{{$ctrl.progress}}" aria-valuemin="0" aria-valuemax="100" style="width:{{$ctrl.progress}}%">
+      {{$ctrl.progress}}/100
+    </div>
+  </div>
   <center>
-    <!-- Show Progress on Collection -->
-    Cells Collected
-    <button class="btn btn-danger btn-lg" ng-click="$ctrl.showCollected()">Show/Hide</button>
-    <div id="collectedCells">
+    <!-- Current View -->
+    <div id= 'currentView'>
     </div>
-    </br>
-    <div class="table-responsive">
-      <p>
-        Sort by:
-        <select ng-model="$ctrl.orderProp">
-          <option value="'id'*1">Island</option>
-          <option value="location">Location</option>
-          <option value="'notes'">Notes</option>
-        </select>
-      </p>
-      <table class="table table-borderless">
-        <thead class="thead-inverse">
-          <tr>
-            <th>Image</th>
-            <th><b>Island<b></th>
-            <th><b>Location<b></th>
-            <th><b>Notes<b></th>
-            <th><b>Collected?<b></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr ng-repeat="cell in $ctrl.cells | filter:$ctrl.query | orderBy:$ctrl.orderProp">
-            <td><img ng-src="{{cell.file}}" alt="{{cell.island}}"
-                  height="200"
-                  width="200"
-                  ng-click="$ctrl.openModalImage(cell.file, cell.island)"/>
-            </td>
-            <td>{{cell.island}}</td>
-            <td>{{cell.location}}</td>
-            <td>{{cell.notes}}</td>
-            <td>
-              <i class="fa fa-check-square fa-5x"
-              aria-hidden="true"
-              ng-click="$ctrl.collectCell(cell.id)"/>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Test Views -->
+    <h1>Current Cell</h1>
+    <div id= 'currCell'>
     </div>
+    <h1>Cells Collected</h1>
+    <table class="table table-borderless table-fit">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th><b>Island<b></th>
+          <th><b>Location<b></th>
+          <th><b>Undo?<b></th>
+        </tr>
+      </thead>
+      <tbody id="collectedBody">
+      </tbody>
+    </table>
   </center>
 </div>

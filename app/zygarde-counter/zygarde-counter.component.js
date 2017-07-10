@@ -40,7 +40,7 @@ angular.
           var progress = 0;
 
           /* Cell was collected if 'true'*/
-          for (var i = 1; i <= len; i++) {
+          for (var i = 0; i < len; i++) {
             if(collected[i]){
               progress+=1;
             }
@@ -54,10 +54,36 @@ angular.
         var curr = document.getElementById('currCell');
 
         /* Show collected cells */
+        self.showCollected();
+      });
+      /* Click on image opens it as a modal */
+      self.openModalImage = function (imgSrc, imgAlt) {
+        // Get the modal, image, and caption text
+        var modal = document.getElementById('myModal');
+        var modalImg = document.getElementById("modalImg");
+        var captionText = document.getElementById("caption");
+        console.log("imgSrc: " + imgSrc);
+        console.log("imgAlt: " + imgSrc);
+        modal.style.display = "block";
+        modalImg.src = imgSrc;
+        captionText.innerHTML = imgAlt;
+      };
+      self.undoCell = function (cellId) {
+        console.log("Collected Cell # " + cellId);
+      };
+      self.showCollected = function () {
+        // Get variables
+        var self = this;
+        var cells = self.cells;
+        var collected = JSON.parse(localStorage.getItem("collected"));
+        var len = 100; //number of possible cells
+
+        // Grab DOM table
         var table = document.getElementById("collectedBody");
+
         for (var i = 0; i < len; i++) {
           // If this cell has already been collected
-          if (collected[i-1]){
+          if (collected[i]){
             // Create an empty <tr> element and add it to the 1st position of the table:
             var row = table.insertRow(-1);
 
@@ -92,26 +118,8 @@ angular.
               var id = cells[i]["id"];
               undoCell.addEventListener('click', function () {self.undoCell(id);}, false);
             }());
-          } // if
-        } // for (var i = 0; i < len; i++) {
-      });
-      /* Click on image opens it as a modal */
-      self.openModalImage = function (imgSrc, imgAlt) {
-        // Get the modal, image, and caption text
-        var modal = document.getElementById('myModal');
-        var modalImg = document.getElementById("modalImg");
-        var captionText = document.getElementById("caption");
-        console.log("imgSrc: " + imgSrc);
-        console.log("imgAlt: " + imgSrc);
-        modal.style.display = "block";
-        modalImg.src = imgSrc;
-        captionText.innerHTML = imgAlt;
-      };
-      self.undoCell = function (cellId) {
-        console.log("Collected Cell # " + cellId);
-      };
-      self.showCollected = function () {
-        console.log("Here's all of them!");
+          } // if (collected[i]){
+        } // for (var i = 0; i < len; i++){}
       };
     }]
   });

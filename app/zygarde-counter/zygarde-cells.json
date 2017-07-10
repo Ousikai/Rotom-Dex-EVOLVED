@@ -1,699 +1,699 @@
 [
 	{
-		"id": "1",
+		"id": "0",
 		"file": "img/zygarde/aether-01.png",
 		"island": "Aether 1",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "2",
+		"id": "1",
 		"file": "img/zygarde/aether-02.png",
 		"island": "Aether 2",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "3",
+		"id": "2",
 		"file": "img/zygarde/aether-03.png",
 		"island": "Aether 3",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "4",
+		"id": "3",
 		"file": "img/zygarde/aether-04.png",
 		"island": "Aether 4",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "5",
+		"id": "4",
 		"file": "img/zygarde/aether-05.png",
 		"island": "Aether 5",
-		"location": "PizzaHut",
+		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "6",
+		"id": "5",
 		"file": "img/zygarde/akala-0-core.png",
-		"island": "Akala Core",
+		"island": "Akala 0",
 		"location": "TacoBell",
-		"notes": "Core, teaches Dragon Dance"
+		"notes": "Core, teaches ____"
 	},
 	{
-		"id": "7",
+		"id": "6",
 		"file": "img/zygarde/akala-01.png",
 		"island": "Akala 1",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "8",
+		"id": "7",
 		"file": "img/zygarde/akala-02.png",
 		"island": "Akala 2",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "9",
+		"id": "8",
 		"file": "img/zygarde/akala-03.png",
 		"island": "Akala 3",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "10",
+		"id": "9",
 		"file": "img/zygarde/akala-04.png",
 		"island": "Akala 4",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "11",
+		"id": "10",
 		"file": "img/zygarde/akala-05.png",
 		"island": "Akala 5",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "12",
+		"id": "11",
 		"file": "img/zygarde/akala-06.png",
 		"island": "Akala 6",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "13",
+		"id": "12",
 		"file": "img/zygarde/akala-07.png",
 		"island": "Akala 7",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "14",
+		"id": "13",
 		"file": "img/zygarde/akala-08.png",
 		"island": "Akala 8",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "15",
+		"id": "14",
 		"file": "img/zygarde/akala-09.png",
 		"island": "Akala 9",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "16",
+		"id": "15",
 		"file": "img/zygarde/akala-10.png",
 		"island": "Akala 10",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "17",
+		"id": "16",
 		"file": "img/zygarde/akala-11.png",
 		"island": "Akala 11",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "18",
+		"id": "17",
 		"file": "img/zygarde/akala-12.png",
 		"island": "Akala 12",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "19",
+		"id": "18",
 		"file": "img/zygarde/akala-13.png",
 		"island": "Akala 13",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "20",
+		"id": "19",
 		"file": "img/zygarde/akala-14.png",
 		"island": "Akala 14",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "21",
+		"id": "20",
 		"file": "img/zygarde/akala-15.png",
 		"island": "Akala 15",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "22",
+		"id": "21",
 		"file": "img/zygarde/akala-16.png",
 		"island": "Akala 16",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "23",
+		"id": "22",
 		"file": "img/zygarde/akala-17.png",
 		"island": "Akala 17",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "24",
+		"id": "23",
 		"file": "img/zygarde/akala-18.png",
 		"island": "Akala 18",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "25",
+		"id": "24",
 		"file": "img/zygarde/melemele-0-core1.png",
-		"island": "Melemele Core 1",
+		"island": "Melemele 0",
 		"location": "TacoBell",
-		"notes": "Core, teaches Extreme Speed"
+		"notes": "Core, teaches ____"
+	},
+	{
+		"id": "25",
+		"file": "img/zygarde/melemele-0-core2.png",
+		"island": "Melemele 0",
+		"location": "TacoBell",
+		"notes": "Core, teaches ____"
 	},
 	{
 		"id": "26",
-		"file": "img/zygarde/melemele-0-core2.png",
-		"island": "Melemele Core 2",
-		"location": "TacoBell",
-		"notes": "Core, teaches Thousand Arrows"
-	},
-	{
-		"id": "27",
 		"file": "img/zygarde/melemele-01.png",
 		"island": "Melemele 1",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "28",
+		"id": "27",
 		"file": "img/zygarde/melemele-02.png",
 		"island": "Melemele 2",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "29",
+		"id": "28",
 		"file": "img/zygarde/melemele-03.png",
 		"island": "Melemele 3",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "30",
+		"id": "29",
 		"file": "img/zygarde/melemele-04.png",
 		"island": "Melemele 4",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "31",
+		"id": "30",
 		"file": "img/zygarde/melemele-05.png",
 		"island": "Melemele 5",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "32",
+		"id": "31",
 		"file": "img/zygarde/melemele-06.png",
 		"island": "Melemele 6",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "33",
+		"id": "32",
 		"file": "img/zygarde/melemele-07.png",
 		"island": "Melemele 7",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "34",
+		"id": "33",
 		"file": "img/zygarde/melemele-08.png",
 		"island": "Melemele 8",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "35",
+		"id": "34",
 		"file": "img/zygarde/melemele-09.png",
 		"island": "Melemele 9",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "36",
+		"id": "35",
 		"file": "img/zygarde/melemele-10.png",
 		"island": "Melemele 10",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "37",
+		"id": "36",
 		"file": "img/zygarde/melemele-11.png",
 		"island": "Melemele 11",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "38",
+		"id": "37",
 		"file": "img/zygarde/melemele-12.png",
 		"island": "Melemele 12",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "39",
+		"id": "38",
 		"file": "img/zygarde/melemele-13.png",
 		"island": "Melemele 13",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "40",
+		"id": "39",
 		"file": "img/zygarde/melemele-14.png",
 		"island": "Melemele 14",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "41",
+		"id": "40",
 		"file": "img/zygarde/poni-0-core.png",
-		"island": "Poni Core",
+		"island": "Poni 0",
 		"location": "TacoBell",
-		"notes": "Core, teaches Core Enforcer"
+		"notes": "Core, teaches ____"
 	},
 	{
-		"id": "42",
+		"id": "41",
 		"file": "img/zygarde/poni-01.png",
 		"island": "Poni 1",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "43",
+		"id": "42",
 		"file": "img/zygarde/poni-02.png",
 		"island": "Poni 2",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "44",
+		"id": "43",
 		"file": "img/zygarde/poni-03.png",
 		"island": "Poni 3",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "45",
+		"id": "44",
 		"file": "img/zygarde/poni-04.png",
 		"island": "Poni 4",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "46",
+		"id": "45",
 		"file": "img/zygarde/poni-05.png",
 		"island": "Poni 5",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "47",
+		"id": "46",
 		"file": "img/zygarde/poni-06.png",
 		"island": "Poni 6",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "48",
+		"id": "47",
 		"file": "img/zygarde/poni-07.png",
 		"island": "Poni 7",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "49",
+		"id": "48",
 		"file": "img/zygarde/poni-08.png",
 		"island": "Poni 8",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "50",
+		"id": "49",
 		"file": "img/zygarde/poni-09.png",
 		"island": "Poni 9",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "51",
+		"id": "50",
 		"file": "img/zygarde/poni-10.png",
 		"island": "Poni 10",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "52",
+		"id": "51",
 		"file": "img/zygarde/poni-11.png",
 		"island": "Poni 11",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "53",
+		"id": "52",
 		"file": "img/zygarde/poni-12.png",
 		"island": "Poni 12",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "54",
+		"id": "53",
 		"file": "img/zygarde/poni-13.png",
 		"island": "Poni 13",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "55",
+		"id": "54",
 		"file": "img/zygarde/poni-14.png",
 		"island": "Poni 14",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "56",
+		"id": "55",
 		"file": "img/zygarde/poni-15.png",
 		"island": "Poni 15",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "57",
+		"id": "56",
 		"file": "img/zygarde/poni-16.png",
 		"island": "Poni 16",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "58",
+		"id": "57",
 		"file": "img/zygarde/poni-17.png",
 		"island": "Poni 17",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "59",
+		"id": "58",
 		"file": "img/zygarde/poni-18.png",
 		"island": "Poni 18",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "60",
+		"id": "59",
 		"file": "img/zygarde/poni-19.png",
 		"island": "Poni 19",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "61",
+		"id": "60",
 		"file": "img/zygarde/poni-20.png",
 		"island": "Poni 20",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "62",
+		"id": "61",
 		"file": "img/zygarde/poni-21.png",
 		"island": "Poni 21",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "63",
+		"id": "62",
 		"file": "img/zygarde/poni-22.png",
 		"island": "Poni 22",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "64",
+		"id": "63",
 		"file": "img/zygarde/poni-23.png",
 		"island": "Poni 23",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "65",
+		"id": "64",
 		"file": "img/zygarde/poni-24.png",
 		"island": "Poni 24",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "66",
+		"id": "65",
 		"file": "img/zygarde/poni-25.png",
 		"island": "Poni 25",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "67",
+		"id": "66",
 		"file": "img/zygarde/poni-26.png",
 		"island": "Poni 26",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "68",
+		"id": "67",
 		"file": "img/zygarde/poni-27.png",
 		"island": "Poni 27",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "69",
+		"id": "68",
 		"file": "img/zygarde/poni-28.png",
 		"island": "Poni 28",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "70",
+		"id": "69",
 		"file": "img/zygarde/ulaula-0-core.png",
-		"island": "Ulaula Core",
+		"island": "Ulaula 0",
 		"location": "TacoBell",
-		"notes": "Core, teaches Thousand waves"
+		"notes": "Core, teaches ____"
 	},
 	{
-		"id": "71",
+		"id": "70",
 		"file": "img/zygarde/ulaula-01.png",
 		"island": "Ulaula 1",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "72",
+		"id": "71",
 		"file": "img/zygarde/ulaula-02.png",
 		"island": "Ulaula 2",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "73",
+		"id": "72",
 		"file": "img/zygarde/ulaula-03.png",
 		"island": "Ulaula 3",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "74",
+		"id": "73",
 		"file": "img/zygarde/ulaula-04.png",
 		"island": "Ulaula 4",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "75",
+		"id": "74",
 		"file": "img/zygarde/ulaula-05.png",
 		"island": "Ulaula 5",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "76",
+		"id": "75",
 		"file": "img/zygarde/ulaula-06.png",
 		"island": "Ulaula 6",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "77",
+		"id": "76",
 		"file": "img/zygarde/ulaula-07.png",
 		"island": "Ulaula 7",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "78",
+		"id": "77",
 		"file": "img/zygarde/ulaula-08.png",
 		"island": "Ulaula 8",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "79",
+		"id": "78",
 		"file": "img/zygarde/ulaula-09.png",
 		"island": "Ulaula 9",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "80",
+		"id": "79",
 		"file": "img/zygarde/ulaula-10.png",
 		"island": "Ulaula 10",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "81",
+		"id": "80",
 		"file": "img/zygarde/ulaula-11.png",
 		"island": "Ulaula 11",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "82",
+		"id": "81",
 		"file": "img/zygarde/ulaula-12.png",
 		"island": "Ulaula 12",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "83",
+		"id": "82",
 		"file": "img/zygarde/ulaula-13.png",
 		"island": "Ulaula 13",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "84",
+		"id": "83",
 		"file": "img/zygarde/ulaula-14.png",
 		"island": "Ulaula 14",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "85",
+		"id": "84",
 		"file": "img/zygarde/ulaula-15.png",
 		"island": "Ulaula 15",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "86",
+		"id": "85",
 		"file": "img/zygarde/ulaula-16.png",
 		"island": "Ulaula 16",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "87",
+		"id": "86",
 		"file": "img/zygarde/ulaula-17.png",
 		"island": "Ulaula 17",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "88",
+		"id": "87",
 		"file": "img/zygarde/ulaula-18.png",
 		"island": "Ulaula 18",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "89",
+		"id": "88",
 		"file": "img/zygarde/ulaula-19.png",
 		"island": "Ulaula 19",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "90",
+		"id": "89",
 		"file": "img/zygarde/ulaula-20.png",
 		"island": "Ulaula 20",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "91",
+		"id": "90",
 		"file": "img/zygarde/ulaula-21.png",
 		"island": "Ulaula 21",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "92",
+		"id": "91",
 		"file": "img/zygarde/ulaula-22.png",
 		"island": "Ulaula 22",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "93",
+		"id": "92",
 		"file": "img/zygarde/ulaula-23.png",
 		"island": "Ulaula 23",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "94",
+		"id": "93",
 		"file": "img/zygarde/ulaula-24.png",
 		"island": "Ulaula 24",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "95",
+		"id": "94",
 		"file": "img/zygarde/ulaula-25.png",
 		"island": "Ulaula 25",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "96",
+		"id": "95",
 		"file": "img/zygarde/ulaula-26.png",
 		"island": "Ulaula 26",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "97",
+		"id": "96",
 		"file": "img/zygarde/ulaula-27.png",
 		"island": "Ulaula 27",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "98",
+		"id": "97",
 		"file": "img/zygarde/ulaula-28.png",
 		"island": "Ulaula 28",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "99",
+		"id": "98",
 		"file": "img/zygarde/ulaula-29.png",
 		"island": "Ulaula 29",
 		"location": "TacoBell",
 		"notes": " "
 	},
 	{
-		"id": "100",
+		"id": "99",
 		"file": "img/zygarde/ulaula-30.png",
 		"island": "Ulaula 30",
 		"location": "TacoBell",

@@ -5,7 +5,7 @@ def jsonify_zygarde_cells():
     # Set up new JSON file
     f = open('zygarde-cells.json', 'w')
     f.write("[\n")
-    id = 1
+    id = 0
     imgs = os.listdir("img/zygarde/")
     imgs.sort()
     # Write JSON element for each zygarde cell

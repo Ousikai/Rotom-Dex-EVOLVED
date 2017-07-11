@@ -50,8 +50,16 @@ angular.
           self.progress = progress;
         }
 
-        /* Show current cell */
-        var curr = document.getElementById('currCell');
+        /* Setup SELECT options */
+          // Set up onchange function
+          var currentSelect = document.getElementById('currentSelect');
+          currentSelect.onchange = function(){self.showCurrent();};
+
+          // Set up select options
+          self.setupPending();
+
+        /* Show current cell in SELECT */
+        self.showCurrent();
 
         /* Show collected cells */
         self.showCollected();
@@ -68,8 +76,35 @@ angular.
         modalImg.src = imgSrc;
         captionText.innerHTML = imgAlt;
       };
-      self.undoCell = function (cellId) {
-        console.log("Collected Cell # " + cellId);
+      self.setupPending = function () {
+        // Get variables
+        var self = this;
+        var cells = self.cells;
+        var collected = JSON.parse(localStorage.getItem("collected"));
+        var len = 100; //number of possible cells
+
+        // Grab DOM to set up select
+        var select = document.getElementById('currentSelect');
+
+        // Loop through collected cells
+        for (var i = 0; i < len; i++) {
+          // If this cell has not been collected yet, add as select option
+          if (!collected[i]){
+            var optionValue = document.createElement("option");
+            optionValue.setAttribute("value", i);
+            var optionText = document.createTextNode(cells[i]['island']);
+            optionValue.appendChild(optionText);
+            select.appendChild(optionValue);
+          }
+        }
+
+        //console.log("Collected Cell # " + cellId);
+      };
+      self.showCurrent = function () {
+        var e = document.getElementById("currentSelect");
+        var id = e.options[e.selectedIndex].value;
+        //var island = e.options[e.selectedIndex].text;
+        console.log("current Cell: " + id);
       };
       self.showCollected = function () {
         // Get variables
@@ -120,6 +155,9 @@ angular.
             }());
           } // if (collected[i]){
         } // for (var i = 0; i < len; i++){}
+      };
+      self.undoCell = function (cellId) {
+        console.log("Collected Cell # " + cellId);
       };
     }]
   });

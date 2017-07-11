@@ -34,7 +34,6 @@ angular.
 
         /* localStorage exists! Now to continue where the client left off... */
         else {
-
           /* Get progress array from "collected" */
           var collected = JSON.parse(localStorage.getItem("collected"));
           var progress = 0;
@@ -48,7 +47,10 @@ angular.
 
           /* Update progress bar */
           self.progress = progress;
-        }
+        } // else {
+
+        /* Update progress bar */
+        self.updateProgressBar();
 
         /* Setup SELECT options */
           // Set up onchange function
@@ -63,7 +65,9 @@ angular.
 
         /* Show collected cells */
         self.showCollected();
-      });
+
+      }); //end of page initilation
+
       /* Click on image opens it as a modal */
       self.openModalImage = function (imgSrc, imgAlt) {
         // Get the modal, image, and caption text
@@ -76,15 +80,29 @@ angular.
         modalImg.src = imgSrc;
         captionText.innerHTML = imgAlt;
       };
+
+      /* Updates progress bar based current number of collected cells */
+      self.updateProgressBar = function () {
+        // Get current progress value
+        var progress = self.progress;
+        var progressPercent = "" + progress + "%";
+        var progressText = "" + progress + "/100";
+        // Update progressBar value
+        $("#progressBar").css("width", "" + progressPercent);
+        $("#progressBar").html(progressText);
+      } //updateProgressBar()
+
+      /* Create a select bar for cells in progress */
       self.setupPending = function () {
         // Get variables
-        var self = this;
         var cells = self.cells;
         var collected = JSON.parse(localStorage.getItem("collected"));
         var len = 100; //number of possible cells
 
         // Grab DOM to set up select
-        var select = document.getElementById('currentSelect');
+        var select = document.getElementById('currentSelect')
+        // Clear the current select options to remake the updated version
+        select.innerHTML = '';
 
         // Loop through collected cells
         for (var i = 0; i < len; i++) {
@@ -97,24 +115,32 @@ angular.
             select.appendChild(optionValue);
           }
         }
+      }; //setupPending()
 
-        //console.log("Collected Cell # " + cellId);
-      };
+      /* Generates the page for the current cell being tracked */
       self.showCurrent = function () {
+        /* Get current selected value (function called every 'onchange')*/
         var e = document.getElementById("currentSelect");
         var id = e.options[e.selectedIndex].value;
         //var island = e.options[e.selectedIndex].text;
         console.log("current Cell: " + id);
-      };
+
+        /* Get div for displaying the currently selected cell */
+        var view = document.getElementById("currentView");
+        view.innerHTML = ''; //Clear current contents of currentView
+
+      }; //self.showCurrent()
+
+      /* Generates a list of collected cells (with an option to remove those mistakenly collected)*/
       self.showCollected = function () {
         // Get variables
-        var self = this;
         var cells = self.cells;
         var collected = JSON.parse(localStorage.getItem("collected"));
         var len = 100; //number of possible cells
 
         // Grab DOM table
         var table = document.getElementById("collectedBody");
+        table.innerHTML = '';
 
         for (var i = 0; i < len; i++) {
           // If this cell has already been collected
@@ -156,8 +182,12 @@ angular.
           } // if (collected[i]){
         } // for (var i = 0; i < len; i++){}
       };
+
+      /* Returns a cell back to the select options and removes it from the collected array */
       self.undoCell = function (cellId) {
         console.log("Collected Cell # " + cellId);
-      };
+      }; //self.showCollected = function () {
+
+      /* End of functions */
     }]
   });

@@ -123,13 +123,22 @@ angular.
         var e = document.getElementById("currentSelect");
         var id = e.options[e.selectedIndex].value;
         //var island = e.options[e.selectedIndex].text;
-        console.log("current Cell: " + id);
+        //console.log("current Cell: " + id);
 
-        /* Get div for displaying the currently selected cell */
-        var view = document.getElementById("currentView");
-        view.innerHTML = ''; //Clear current contents of currentView
+        /* Get values from cell array */
+        var cells = self.cells;
+        var img = cells[id]['file'];
+        var island = cells[id]['island'];
+        var location = cells[id]['location'];
+        var notes = cells[id]['notes'];
+
+        /* Update table values */
+        $("#currentImg").attr("src", img);
+        $("#currentLocation").html(location);
+        $("#currentNotes").html(notes);
 
       }; //self.showCurrent()
+
 
       /* Generates a list of collected cells (with an option to remove those mistakenly collected)*/
       self.showCollected = function () {

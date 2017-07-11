@@ -18,14 +18,34 @@
     <!-- Currently selected cell -->
     <h1>Current Cell</h1>
     <div>
-      <select id="currentSelect">
-      </select>
-      <div id='currentView'>
-      </div>
+      <table class="table table-striped table-fit">
+        <tbody>
+          <tr>
+            <img id="currentImg" src="" alt="" width="500" height="500">
+          </tr>
+          <tr>
+            <td><b>Island</b></td>
+            <td><select id="currentSelect"></select></td>
+          </tr>
+          <tr>
+            <td><b>Location<b></td>
+            <td id="currentLocation"></td>
+          </tr>
+          <tr>
+            <td><b>Notes<b></td>
+              <td id="currentNotes"></td>
+          </tr>
+          <tr>
+            <td><b>Collected?<b></td>
+            <td>PUT BUTTON HERE</td>
+          </tr>
+        </tbody>
+      </br>
+      </table>
     </div>
     <!-- Cells collected so far -->
     <h1>Cells Collected</h1>
-    <table class="table table-borderless table-fit">
+    <table class="table table-striped table-fit">
       <thead>
         <tr>
           <th>Image</th>

@@ -133,9 +133,28 @@ angular.
         var notes = cells[id]['notes'];
 
         /* Update table values */
-        $("#currentImg").attr("src", img);
-        $("#currentLocation").html(location);
-        $("#currentNotes").html(notes);
+          // img
+          $("#currentImg").attr("src", img);
+          var currentImg = document.getElementById('currentImg');
+          (function () {
+            currentImg.addEventListener('click', function () {self.openModalImage(img, island);}, false);
+          }());
+
+          // location
+          $("#currentLocation").html(location);
+
+          // notes
+          $("#currentNotes").html(notes);
+
+          // collect button
+          $('#collectButton').unbind('click'); // unbind old onclick function
+          $('#collectButton').click(function(){ // bind new onclick function!
+            self.collectCell(id);
+          });
+          /*var collectButton = document.getElementById('collectButton');
+          (function () {
+            collectButton.addEventListener('click', function () {self.collectCell(id);}, false);
+          }());*/
 
       }; //self.showCurrent()
 
@@ -193,9 +212,14 @@ angular.
       };
 
       /* Returns a cell back to the select options and removes it from the collected array */
-      self.undoCell = function (cellId) {
+      self.collectCell = function (cellId) {
         console.log("Collected Cell # " + cellId);
-      }; //self.showCollected = function () {
+      }; // collectCell()
+
+      /* Returns a cell back to the select options and removes it from the collected array */
+      self.undoCell = function (cellId) {
+        console.log("Undo Cell # " + cellId);
+      }; // undoCell()
 
       /* End of functions */
     }]

@@ -229,16 +229,9 @@ angular.
           // change select option to next value
           else {
 
-            // get collected cell information
+            // remove the collected cell from the options list
             var selected_element = $('#currentSelect').find('option:selected');
             var id = selected_element.val();
-
-            // if next option exists in select, set it as the current select
-            selected_element.removeAttr('selected');
-            selected_element.next().attr('selected', 'selected');
-            $('#currentSelect').val(selected_element.next().val());
-
-            // remove the collected cell from the options list
             $("#currentSelect option[value=" + id + "]").remove();
 
             // update view

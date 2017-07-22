@@ -213,7 +213,36 @@ angular.
 
       /* Returns a cell back to the select options and removes it from the collected array */
       self.collectCell = function (cellId) {
-        console.log("Collected Cell # " + cellId);
+        // set cell collected as 'true' in localStorage
+        var collected = JSON.parse(localStorage.getItem("collected"));
+        collected[cellId] = true;
+
+        // update progress bar
+        self.progress +=1;
+        self.updateProgressBar();
+
+        // show next cell to be collected
+
+          // if all cells have already been collected
+          if (self.progress == 100){
+            // TODO: Add spash screen for journey's end
+            console.log("Congratulations! You have collected all the cells! ");
+          }
+          // change select option to next value
+          else {
+            // if next option exists in select, set it as the current select
+            var selected_element = $('#currentSelect').find('option:selected');
+            selected_element.removeAttr('selected');
+            selected_element.next().attr('selected', 'selected');
+            $('#currentSelect').val(selected_element.next().val());
+
+            // update view
+            self.showCurrent();
+          }
+
+        // update localStorage
+        localStorage.setItem("collected", JSON.stringify(collected));
+
       }; // collectCell()
 
       /* Returns a cell back to the select options and removes it from the collected array */

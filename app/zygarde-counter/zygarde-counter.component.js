@@ -74,8 +74,6 @@ angular.
         var modal = document.getElementById('myModal');
         var modalImg = document.getElementById("modalImg");
         var captionText = document.getElementById("caption");
-        console.log("imgSrc: " + imgSrc);
-        console.log("imgAlt: " + imgSrc);
         modal.style.display = "block";
         modalImg.src = imgSrc;
         captionText.innerHTML = imgAlt;
@@ -230,11 +228,18 @@ angular.
           }
           // change select option to next value
           else {
-            // if next option exists in select, set it as the current select
+
+            // get collected cell information
             var selected_element = $('#currentSelect').find('option:selected');
+            var id = selected_element.val();
+
+            // if next option exists in select, set it as the current select
             selected_element.removeAttr('selected');
             selected_element.next().attr('selected', 'selected');
             $('#currentSelect').val(selected_element.next().val());
+
+            // remove the collected cell from the options list
+            $("#currentSelect option[value=" + id + "]").remove();
 
             // update view
             self.showCurrent();

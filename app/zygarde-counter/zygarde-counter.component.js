@@ -64,7 +64,7 @@ angular.
         self.showCurrent();
 
         /* Show collected cells */
-        self.showCollected();
+        //self.showCollected();
 
       }); //end of page initilation
 

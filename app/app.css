@@ -4,9 +4,24 @@
     width: 400px;
 }
 
-/* Font size for mobile devices accessing WebApp */
+/* remove borders from tables */
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
+/* Font sizes */
 .mobile-font{
     font-size: 40px;
+}
+
+.image-caption-font{
+    font-size: 25px;
+    height: 0px;
 }
 
 /* Change size of glyphicons */
@@ -31,7 +46,23 @@
   color: darkred;
 }
 
-/* ---- CSS I stole from the Internet ---- */
+/* change bar height and font size of the progress bar */
+.progress{
+  height: 40px;
+  background-color: #aaa;
+}
+
+.progress-bar{
+	padding-top: 10px;
+}
+
+.progress-font{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ------------------------ CSS I stole from the Internet ------------------------ */
+
 /* Style the Image Used to Trigger the Image Modal */
 #myImg {
     border-radius: 5px;
@@ -142,4 +173,12 @@
     -moz-transition: opacity 500ms ease-in;
     -o-transition: opacity 500ms ease-in;
     -ms-transition: opacity 500ms ease-in;
+}
+
+/* valign Bootstrap progress bar */
+.table > tbody > tr > td {
+    vertical-align: middle !important;
+}
+.table > tbody > tr > td > .progress {
+    margin-bottom: 0px !important;
 }

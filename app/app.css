@@ -187,7 +187,7 @@
 /* Background infinite scroll */
 .overlay{
   position:fixed;
-   background:url(img/zygarde/aether-02.png);
+   background:url(img/rde-bg.jpg);
   -webkit-animation:100s scroll infinite linear;
   -moz-animation:100s scroll infinite linear;
   -o-animation:100s scroll infinite linear;

@@ -14,28 +14,30 @@
 
   <!-- Currently selected cell (if in progress) -->
   <div id="currentDiv">
-    <table class="table table-fit">
+    <table class="table table-borderless table-fit">
       <tbody>
         <tr>
-          <img id="currentImg" src="" alt="" width="500" height="500">
-        <div class="image-caption-font">Click on the image to enlarge it!</div>
+          <img id="currentImg" src="" alt="" width="490" height="490">
+        </tr>
+        <tr class="transparent-black">
+            <td align="center" colspan="2">Click on the image to enlarge it!</td>
         </tr>
         <tr>
-          <td><b>Island</b></td>
-          <td><select id="currentSelect"></select></td>
+          <td class="black-bg-red-font"><b>Island</b></td>
+          <td class="red-bg-white-font"><select id="currentSelect" class="black-bg-red-font"></select></td>
         </tr>
         <tr>
-          <td><b>Location<b></td>
-          <td id="currentLocation"></td>
+          <td class="black-bg-red-font"><b>Location<b></td>
+          <td class="red-bg-black-font" id="currentLocation" ></td>
         </tr>
         <tr>
-          <td><b>Notes<b></td>
-            <td id="currentNotes"></td>
+          <td class="black-bg-red-font"><b>Notes<b></td>
+          <td class="red-bg-black-font" id="currentNotes" ></td>
         </tr>
         <!-- Progress Bar -->
         <tr valign="middle">
-          <td><b>Progress</b></td>
-          <td>
+          <td class="black-bg-red-font"><b>Progress</b></td>
+          <td class="red-bg-black-font">
               <div class="progress">
                 <div id="progressBar"
                 class="progress-bar progress-bar-success progress-bar-striped active progress-font"
@@ -46,8 +48,8 @@
           </td>
         </tr>
         <tr>
-          <td><b>Collected?<b></td>
-          <td><center><i id="collectButton" class="fa fa-check-square fa-5x" aria-hidden="true" ></i></center></td>
+          <td class="black-bg-red-font"><b>Collected?<b></td>
+          <td class="red-bg-white-font"><center><i id="collectButton" class="fa fa-check-square fa-5x white-bg-black-font" aria-hidden="true" ></i></center></td>
         </tr>
       </tbody>
     </br>

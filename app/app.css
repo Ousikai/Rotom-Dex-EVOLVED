@@ -1,4 +1,9 @@
 /* ---- Custom CSS ---- */
+/* Scrollbar */
+html {
+    overflow-y:scroll;
+}
+
 /* Have table columns fit the width of their content */
 .table-fit{
     width: 400px;
@@ -14,14 +19,45 @@
     border: none;
 }
 
+/* table background and font colors */
+.transparent-black{
+  /* background */
+  background: rgba(0, 0, 0, 0.4); !important;
+
+  /* font */
+  font-size: 25px;
+  height: 0px;
+  color: white;
+
+  /* stroked text
+  text-shadow: #000 0px 0px 1px;
+  -webkit-font-smoothing: antialiased;
+  */
+}
+
+.red-bg-white-font{
+  background-color: #D75151; !important;
+  color: #FFFFFF;
+}
+
+.red-bg-black-font{
+  background-color: #D75151; !important;
+  color: #202020;
+}
+
+.black-bg-red-font{
+  background-color: #202020; !important;
+  color: #D75151;
+}
+
+.black-bg-white-font{
+  background-color: #202020; !important;
+  color: #FFFFFF;
+}
+
 /* Font sizes */
 .mobile-font{
     font-size: 40px;
-}
-
-.image-caption-font{
-    font-size: 25px;
-    height: 0px;
 }
 
 /* Change size of glyphicons */
@@ -33,9 +69,15 @@
 /* Hover checkbox */
 .fa-check-square{
   color: limegreen;
+  background:  linear-gradient(to bottom, white, white) no-repeat;
+  background-size: calc(100% - 40px);
+  background-position: center;
 }
 .fa-check-square:hover {
   color: darkgreen;
+  background:  linear-gradient(to bottom, white, white) no-repeat;
+  background-size: calc(100% - 40px);
+  background-position: center;
 }
 
 /* Hover undo button */

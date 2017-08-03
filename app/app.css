@@ -1,8 +1,5 @@
 /* ---- Custom CSS ---- */
-/* Scrollbar */
-html {
-    overflow-y:scroll;
-}
+/* TODO: Scrollbar */
 
 /* Have table columns fit the width of their content */
 .table-fit{

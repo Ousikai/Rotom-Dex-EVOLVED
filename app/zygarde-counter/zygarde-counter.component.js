@@ -128,7 +128,6 @@ angular.
         var img = cells[id]['file'];
         var island = cells[id]['island'];
         var location = cells[id]['location'];
-        var notes = cells[id]['notes'];
 
         /* Update table values */
           // img
@@ -140,9 +139,6 @@ angular.
 
           // location
           $("#currentLocation").html(location);
-
-          // notes
-          $("#currentNotes").html(notes);
 
           // collect button
           $('#collectButton').unbind('click'); // unbind old onclick function

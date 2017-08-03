@@ -211,6 +211,16 @@ angular.
 
       /* Returns a cell back to the select options and removes it from the collected array */
       self.collectCell = function (cellId) {
+
+        // play Rotom's cry as collected sound
+        var audio = new Audio('img/rotom_cry.wav');
+        audio.play();
+
+        // play Toast notification
+        toastr.options = { onclick: function () { alert("You clicked Me!"); } }
+        toastr.options.positionClass = "toast-top-center";
+        toastr.success('<u>Undo?</u>', 'Zygarde Cell Collected!');
+
         // set cell collected as 'true' in localStorage
         var collected = JSON.parse(localStorage.getItem("collected"));
         collected[cellId] = true;

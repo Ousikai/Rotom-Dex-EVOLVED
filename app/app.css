@@ -60,6 +60,12 @@ html {
     font-size: 40px;
 }
 
+/* toastr custom CSS */
+.toast-top-center {
+  font-size: 20px;
+  text-align: center;
+}
+
 /* Change size of glyphicons */
 .gi-2x{font-size: 2em;}
 .gi-3x{font-size: 3em;}

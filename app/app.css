@@ -1,5 +1,4 @@
 /* ---- Custom CSS ---- */
-/* TODO: Scrollbar */
 
 /* Have table columns fit the width of their content */
 .table-fit{
@@ -231,7 +230,6 @@
 
 /* Background infinite scroll */
 .overlay{
-  position:fixed;
    background:url(img/rde-bg.jpg);
   -webkit-animation:100s scroll infinite linear;
   -moz-animation:100s scroll infinite linear;

@@ -9,6 +9,7 @@ angular.
 
       /* Initialize webpage, create new localStorage and variable if initial visit */
       $http.get('zygarde-counter/zygarde-cells.json').then(function(response) {
+        
         /* Parse JSON data */
         self.cells = response.data;
         var cells = self.cells;

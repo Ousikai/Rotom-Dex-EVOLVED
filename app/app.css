@@ -2,7 +2,7 @@
 
 /* Have table columns fit the width of their content */
 .table-fit{
-    width: 400px;
+    width: 500px;
 }
 
 /* remove borders from tables */
@@ -21,8 +21,6 @@
   background: rgba(0, 0, 0, 0.4); !important;
 
   /* font */
-  font-size: 25px;
-  height: 0px;
   color: white;
 
   /* stroked text
@@ -36,19 +34,19 @@
   color: #FFFFFF;
 }
 
-.red-bg-black-font{
-  background-color: #D75151; !important;
-  color: #202020;
-}
-
 .black-bg-red-font{
   background-color: #202020; !important;
   color: #D75151;
 }
 
-.black-bg-blue-font{
+.black-bg-white-font{
   background-color: #202020; !important;
-  color: #4286f4;
+  color: #FFFFFF;
+}
+
+.white-bg-blue-font{
+  background-color: #FFFFFF; !important;
+  color: #005eff;
 }
 
 /* Font sizes */
@@ -79,9 +77,6 @@
 }
 .fa-check-square:hover {
   color: darkgreen;
-  background:  linear-gradient(to bottom, white, white) no-repeat;
-  background-size: calc(100% - 40px);
-  background-position: center;
 }
 
 /* Hover undo button */
@@ -92,19 +87,27 @@
   color: darkred;
 }
 
-/* Hover left/right button */
-.glyphicon-circle-arrow-left{
+/* Hover up/down button */
+.glyphicon-circle-arrow-up{
   color: #005eff;
   margin-top: 10px;
   margin-right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px 3px 0 3px;
+  border: 1px #ccc solid;
 }
-.glyphicon-circle-arrow-left:hover {
+.glyphicon-circle-arrow-up:hover {
   color: #013a9b;
 }
-.glyphicon-circle-arrow-right{
+.glyphicon-circle-arrow-down{
   color: #005eff;
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px 3px 0 3px;
+  border: 1px #ccc solid;
 }
-.glyphicon-circle-arrow-right:hover {
+.glyphicon-circle-arrow-down:hover {
   color: #013a9b;
 }
 

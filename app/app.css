@@ -46,9 +46,9 @@
   color: #D75151;
 }
 
-.black-bg-white-font{
+.black-bg-blue-font{
   background-color: #202020; !important;
-  color: #FFFFFF;
+  color: #4286f4;
 }
 
 /* Font sizes */
@@ -63,10 +63,12 @@
 }
 
 /* Change size of glyphicons */
+.gi-1-half-x{font-size: 1.5em;}
 .gi-2x{font-size: 2em;}
 .gi-3x{font-size: 3em;}
 .gi-4x{font-size: 4em;}
 .gi-5x{font-size: 5em;}
+
 
 /* Hover checkbox */
 .fa-check-square{
@@ -90,10 +92,27 @@
   color: darkred;
 }
 
+/* Hover left/right button */
+.glyphicon-circle-arrow-left{
+  color: #005eff;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.glyphicon-circle-arrow-left:hover {
+  color: #013a9b;
+}
+.glyphicon-circle-arrow-right{
+  color: #005eff;
+}
+.glyphicon-circle-arrow-right:hover {
+  color: #013a9b;
+}
+
 /* change bar height and font size of the progress bar */
 .progress{
   height: 40px;
   background-color: #aaa;
+  display: inline-block;
 }
 
 .progress-bar{

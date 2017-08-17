@@ -19,7 +19,32 @@
         <tr>
           <img id="currentImg" src="" alt="" width="500" height="500">
         </tr>
-        <tr class="transparent-black">
+        <tr valign="middle" class="transparent-black">
+          <td colspan="2" align="center">
+            <b id="progressText"></b>
+            <!-- Progress Bar
+            <div class="progress">
+              <div id="progressBar"
+                class="progress-bar progress-bar-success progress-bar-striped active progress-font"
+                role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div> -->
+            <i class='glyphicon glyphicon-remove-sign fa-1x' aria-hidden='true' ng-click="$ctrl.undoCell()"/>
+          </td>
+        </tr>
+        <tr valign="middle" class="transparent-black">
+          <td colspan="2" align="center">
+            <!-- Progress Bar -->
+            <div class="progress">
+              <div id="progressBar"
+                class="progress-bar progress-bar-success progress-bar-striped active progress-font"
+                role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                </div>
+                <span class="sr-only">25% Complete</span>
+              </div>
+          </td>
+        </tr>
+        <tr class="black-bg-white-font">
           <td align="center"><select id="currentSelect" class="black-bg-white-font"></select></td>
           <td align="center">
             <i class="glyphicon glyphicon-circle-arrow-up   gi-1-half-x" aria-hidden="true"></i>
@@ -28,20 +53,6 @@
         </tr>
         <tr>
           <td class="red-bg-white-font" colspan="2" id="currentLocation" ></td>
-        </tr>
-        <!-- Progress Bar -->
-        <tr valign="middle">
-          <td class="black-bg-red-font"><b>Progress</b></td>
-          <td class="red-bg-white-font">
-              <div class="progress">
-                <div id="progressBar"
-                class="progress-bar progress-bar-success progress-bar-striped active progress-font"
-                role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <i class='glyphicon glyphicon-remove-sign fa-1x' aria-hidden='true' ng-click="$ctrl.undoCell()"/>
-          </td>
         </tr>
         <tr>
           <td class="black-bg-red-font"><b>Collected?<b></td>

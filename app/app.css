@@ -22,6 +22,7 @@
 
   /* font */
   color: white;
+  font-size: 30px;
 
   /* stroked text
   text-shadow: #000 0px 0px 1px;
@@ -81,7 +82,20 @@
 
 /* Hover undo button */
 .glyphicon-remove-sign{
+  /* color and orientation of glyphicon */
   color: red;
+  top: 0.15em;
+  /* color of glyphicon background */
+  /*
+  background-color: white;
+  background-position: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  */
+  background:  linear-gradient(to bottom, white, white) no-repeat;
+  background-size: calc(100% - 11px);
+  background-position: center;
 }
 .glyphicon-remove-sign:hover {
   color: darkred;
@@ -89,12 +103,14 @@
 
 /* Hover up/down button */
 .glyphicon-circle-arrow-up{
+  /* color and orientation of glyphicon */
   color: #005eff;
   margin-top: 10px;
   margin-right: 10px;
+  /* color of glyphicon background */
   background-color: white;
   border-radius: 50%;
-  padding: 4px 3px 0 3px;
+  padding: 3px 3px 0 3px;
   border: 1px #ccc solid;
 }
 .glyphicon-circle-arrow-up:hover {
@@ -104,7 +120,7 @@
   color: #005eff;
   background-color: white;
   border-radius: 50%;
-  padding: 4px 3px 0 3px;
+  padding: 3px 3px 0 3px;
   border: 1px #ccc solid;
 }
 .glyphicon-circle-arrow-down:hover {
@@ -113,18 +129,21 @@
 
 /* change bar height and font size of the progress bar */
 .progress{
-  height: 40px;
+  width: 265px;
+  height: 25px;
   background-color: #aaa;
-  display: inline-block;
+  margin-top: -15px;
 }
 
 .progress-bar{
-	padding-top: 10px;
+	/* padding-top: 10px; */
 }
 
 .progress-font{
-    font-size: 30px;
+  /*
+    font-size: 20px;
     font-weight: bold;
+    */
 }
 
 /* valign Bootstrap progress bar */

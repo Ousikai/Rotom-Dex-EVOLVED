@@ -83,11 +83,11 @@ angular.
       self.updateProgressBar = function () {
         // Get current progress value
         var progress = self.progress;
+        var progressText = "Progress: " + progress + "/100";
         var progressPercent = "" + progress + "%";
-        var progressText = "" + progress + "/100";
         // Update progressBar value
+        $("#progressText").html(progressText);
         $("#progressBar").css("width", "" + progressPercent);
-        $("#progressBar").html(progressText);
       } //updateProgressBar()
 
       /* Create a select bar for cells in progress */
@@ -219,7 +219,7 @@ angular.
         // play Toast notification
         toastr.options = { onclick: function () { alert("You clicked Me!"); } }
         toastr.options.positionClass = "toast-top-center";
-        toastr.success('<u>Undo?</u>', 'Zygarde Cell Collected!');
+        toastr.success('<u>Undo? OK</u>', 'Zygarde Cell Collected!');
 
         // set cell collected as 'true' in localStorage
         var collected = JSON.parse(localStorage.getItem("collected"));

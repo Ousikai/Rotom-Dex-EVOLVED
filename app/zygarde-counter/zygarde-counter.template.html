@@ -16,19 +16,17 @@
   <div id="currentDiv">
     <table class="table table-borderless table-fit">
       <tbody>
+
+        <!-- Image -->
         <tr>
           <img id="currentImg" src="" alt="" width="500" height="500">
         </tr>
+
+        <!-- Progress Information -->
         <tr valign="middle" class="transparent-black">
+          <!-- Progress Text -->
           <td colspan="2" align="center">
             <b id="progressText"></b>
-            <!-- Progress Bar
-            <div class="progress">
-              <div id="progressBar"
-                class="progress-bar progress-bar-success progress-bar-striped active progress-font"
-                role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div> -->
             <i class='glyphicon glyphicon-remove-sign fa-1x' aria-hidden='true' ng-click="$ctrl.undoCell()"/>
           </td>
         </tr>
@@ -44,13 +42,19 @@
               </div>
           </td>
         </tr>
+
+        <!-- Navigation Tools -->
         <tr class="black-bg-white-font">
+          <!-- Select Cell Box -->
           <td align="center"><select id="currentSelect" class="black-bg-white-font"></select></td>
+          <!-- Prev/Next Cell Buttons -->
           <td align="center">
-            <i class="glyphicon glyphicon-circle-arrow-up   gi-1-half-x" aria-hidden="true"></i>
-            <i class="glyphicon glyphicon-circle-arrow-down gi-1-half-x" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-circle-arrow-up   gi-1-half-x" aria-hidden="true" ng-click="$ctrl.prevCell()"></i>
+            <i class="glyphicon glyphicon-circle-arrow-down gi-1-half-x" aria-hidden="true" ng-click="$ctrl.nextCell()"></i>
           </td>
         </tr>
+
+        <!-- Location + Collect Button  -->
         <tr>
           <td class="red-bg-white-font" colspan="2" id="currentLocation" ></td>
         </tr>

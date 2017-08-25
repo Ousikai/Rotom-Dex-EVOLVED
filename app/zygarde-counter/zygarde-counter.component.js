@@ -157,6 +157,47 @@ angular.
       }; //self.showCurrent()
 
 
+      /* View previous cell (if it exists) */
+      self.prevCell = function () {
+
+        /* Get the next cell (if it exists) */
+        var prevVal = $('#currentSelect option:selected').prev().val();
+
+        /* If the next cell exists, change the select option and update the current view */
+        if(prevVal){
+          $("#currentSelect :selected")['prev']().prop("selected", true); // move select to next cell
+          self.showCurrent(); // update current view
+        }
+
+        /* Else toast to notify no more upcoming cells! */
+        else {
+          console.log("hellur")
+          // play Toast notification
+          toastr.options.positionClass = "toast-top-center";
+          toastr.error('Previous cell does not exist!');
+        }
+      }; // prevCell()
+
+      /* View next cell (if it exists)  */
+      self.nextCell = function () {
+
+        /* Get the next cell (if it exists) */
+        var nextVal = $('#currentSelect option:selected').next().val();
+
+        /* If the next cell exists, change the select option and update the current view */
+        if(nextVal){
+          $("#currentSelect :selected")['next']().prop("selected", true); // move select to next cell
+          self.showCurrent(); // update current view
+        }
+
+        /* Else toast to notify no more upcoming cells! */
+        else {
+          // play Toast notification
+          toastr.options.positionClass = "toast-top-center";
+          toastr.error('Next cell does not exist!');
+        }
+      }; // nextCell()
+
       /* Generates a list of collected cells (with an option to remove those mistakenly collected)*/
       self.showCollected = function () {
         // Get variables
